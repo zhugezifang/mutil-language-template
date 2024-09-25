@@ -50,7 +50,7 @@ export default function Header({
   }
 
   return (
-    <header className="sticky top-0 bg-[#020d24] z-20 w-full">
+    <header className="sticky top-0 bg-[#276ef1] z-20 w-full">
       <LoadingModal loadingText={indexLanguageText.loadingText}/>
       <GeneratingModal generatingText={indexLanguageText.generateText}/>
       <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
@@ -77,14 +77,14 @@ export default function Header({
               key={navMenuText.name1}
               href={`/${locale}${navMenuText.href1}`}
               onClick={() => setShowLoadingModal(true)}
-              className="text-sm font-semibold leading-6 text-white hover:text-blue-500">
+              className="text-sm font-semibold leading-6 text-white ">
               {navMenuText.name1}
             </a>
             <a
               key={navMenuText.name2}
               href="/"
               onClick={() => setShowLoadingModal(true)}
-              className="text-sm font-semibold leading-6 text-white hover:text-blue-500">
+              className="text-sm font-semibold leading-6 text-white ">
               {navMenuText.name2}
             </a>
         </div>
@@ -173,7 +173,7 @@ export default function Header({
                     key={item.name}
                     href={`/${locale}${item.href}`}
                     onClick={() => setShowLoadingModal(true)}
-                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:text-blue-500"
+                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 "
                   >
                     {item.name}
                   </a>

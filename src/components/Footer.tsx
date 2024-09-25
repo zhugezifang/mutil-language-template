@@ -25,7 +25,7 @@ export default function Footer({
                                  description = ''
                                }) {
   return (
-    <footer className="bg-[#020d24]" aria-labelledby="footer-heading">
+    <footer className="bg-[#276ef1]" aria-labelledby="footer-heading">
       <div id="footer-heading" className="sr-only">
         Footer
       </div>
@@ -41,7 +41,7 @@ export default function Footer({
                 alt="Virtual Try On"
               />
             </a>
-            <p className="text-sm text-gray-300">
+            <p className="text-sm text-white">
               {description}
             </p>
           </div>
@@ -59,7 +59,7 @@ export default function Footer({
                         <li>
                           <Link href={`/${locale}/colour-virtual-try-on`}
                                 target={"_blank"}
-                                className="text-sm leading-6 text-gray-300 hover:text-[#2d6ae0]">
+                                className="text-sm leading-6 text-white ">
                             Colour Virtual Try On
                           </Link>
                         </li>
@@ -75,7 +75,7 @@ export default function Footer({
                         <li key={item.name}>
                           <Link href={`${item.href}`}
                                 target={"_blank"}
-                                className="text-sm leading-6 text-gray-300 hover:text-[#2d6ae0]">
+                                className="text-sm leading-6 text-white ">
                             {item.name}
                           </Link>
                         </li>
@@ -95,7 +95,7 @@ export default function Footer({
                       return (
                         <li key={item.name}>
                           <Link href={`${hrefTo}`}
-                                className="text-sm leading-6 text-gray-300 hover:text-[#2d6ae0]">
+                                className="text-sm leading-6 text-white ">
                             {item.name}
                           </Link>
                         </li>
@@ -109,14 +109,14 @@ export default function Footer({
         </div>
       </div>
 
-      <div className="mx-auto my-6 w-full border border-gray-800 lg:my-6"></div>
+      <div className="mx-auto my-6 w-full border border-white lg:my-6"></div>
       <div>
-          <p className="font-inter lg: text-center text-sm text-gray-500 py-8">
+          <p className="font-inter lg: text-center text-sm text-white py-8">
             © Copyright 2024.{" "}
             <a
               href="/"
               target="_blank"
-              className="text-white"
+              className="text-white font-bold"
             >
               Virtual Try On
             </a>{" "}
