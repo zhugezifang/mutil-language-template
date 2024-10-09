@@ -100,7 +100,7 @@ const PageComponent = ({
       />
       <script
           async
-          src={`https://www.googletagmanager.com/gtag/js?id=G-0SZ9VELZLD`}
+          src={`https://www.googletagmanager.com/gtag/js?id=G-KBVHH6SP3N`}
         />
         <script
           dangerouslySetInnerHTML={{
@@ -108,7 +108,7 @@ const PageComponent = ({
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', 'G-0SZ9VELZLD');
+              gtag('config', 'G-KBVHH6SP3N');
             `,
           }}
         />
