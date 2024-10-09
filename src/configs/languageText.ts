@@ -3,8 +3,6 @@ import {getTranslations} from "next-intl/server";
 export const getNavMenu = async () => {
   const navMenuIndex = await getTranslations('NavMenu');
   return {
-    name1: navMenuIndex('name1'),
-    href1: navMenuIndex('href1'),
     name2: navMenuIndex('name2'),
     href2: navMenuIndex('href2'),
   };
@@ -17,8 +15,10 @@ export const getIndexLanguageText = async () => {
     description: tIndex('description'),
     h1Text: tIndex('h1Text'),
     pDescription: tIndex('pDescription'),
-    soraVideoExample: tIndex('soraVideoExample'),
-    btn: tIndex('btn'),
+    btn1: tIndex('btn1'),
+    btn2: tIndex('btn2'),
+    RowText:tIndex('RowText'),
+    ColText:tIndex('ColText')
   };
 }
 
@@ -26,22 +26,41 @@ export const getIndexLanguageText = async () => {
 export const getQuestionLanguageText = async () => {
   const tIndexQuestion = await getTranslations('indexQuestion');
   return {
+    h2_0: tIndexQuestion('h2_0'),
     h2_1: tIndexQuestion('h2_1'),
     h2_1_p1: tIndexQuestion('h2_1_p1'),
-    h2_1_p2: tIndexQuestion('h2_1_p2'),
     h2_2: tIndexQuestion('h2_2'),
     h2_2_p1: tIndexQuestion('h2_2_p1'),
-    h2_2_p2: tIndexQuestion('h2_2_p2'),
-    h2_2_p3: tIndexQuestion('h2_2_p3'),
-    h2_2_p4a: tIndexQuestion('h2_2_p4'),
     h2_3: tIndexQuestion('h2_3'),
     h2_3_p1: tIndexQuestion('h2_3_p1'),
-    h2_3_p2: tIndexQuestion('h2_3_p2'),
     h2_4: tIndexQuestion('h2_4'),
     h2_4_p1: tIndexQuestion('h2_4_p1'),
-    h2_4_p2: tIndexQuestion('h2_4_p2'),
     h2_5: tIndexQuestion('h2_5'),
     h2_5_p1: tIndexQuestion('h2_5_p1'),
+    h2_6: tIndexQuestion('h2_6'),
+    h2_6_p1: tIndexQuestion('h2_6_p1'),
+    h2_7: tIndexQuestion('h2_7'),
+    h2_7_p1: tIndexQuestion('h2_7_p1'),
+  }
+}
+
+
+export const getFeatureLanguageText = async () => {
+  const tIndexQuestion = await getTranslations('featureInfos');
+  return {
+    h2_0: tIndexQuestion('h2_0'),
+    h2_1: tIndexQuestion('h2_1'),
+    h2_1_p1: tIndexQuestion('h2_1_p1'),
+    h2_2: tIndexQuestion('h2_2'),
+    h2_2_p1: tIndexQuestion('h2_2_p1'),
+    h2_3: tIndexQuestion('h2_3'),
+    h2_3_p1: tIndexQuestion('h2_3_p1'),
+    h2_4: tIndexQuestion('h2_4'),
+    h2_4_p1: tIndexQuestion('h2_4_p1'),
+    h2_5: tIndexQuestion('h2_5'),
+    h2_5_p1: tIndexQuestion('h2_5_p1'),
+    h2_6: tIndexQuestion('h2_6'),
+    h2_6_p1: tIndexQuestion('h2_6_p1'),
   }
 }
 
@@ -112,37 +131,5 @@ export const getTermsOfServiceLanguageText = async () => {
     h4_7_p: tTermsOfService('h4_7_p'),
     h4_8: tTermsOfService('h4_8'),
     h4_8_p: tTermsOfService('h4_8_p'),
-  }
-}
-
-export const getPlaygroundPageLanguageText = async () => {
-  const tPlaygroundPage = await getTranslations('playgroundPage');
-  return {
-    title: tPlaygroundPage('title'),
-    description: tPlaygroundPage('description'),
-    h1Text: tPlaygroundPage('h1Text'),
-    pDescription: tPlaygroundPage('pDescription'),
-  }
-}
-
-export const getColourPageLanguageText = async () => {
-  const tPlaygroundPage = await getTranslations('colourPage');
-  return {
-    title: tPlaygroundPage('title'),
-    description: tPlaygroundPage('description'),
-    h1Text: tPlaygroundPage('h1Text'),
-    pDescription: tPlaygroundPage('pDescription'),
-    h2_1: tPlaygroundPage('h2_1'),
-    h2_1_p1: tPlaygroundPage('h2_1_p1'),
-    h2_2: tPlaygroundPage('h2_2'),
-    h2_2_p1: tPlaygroundPage('h2_2_p1'),
-    h2_3: tPlaygroundPage('h2_3'),
-    h2_3_p1: tPlaygroundPage('h2_3_p1'),
-    h2_4: tPlaygroundPage('h2_4'),
-    h2_4_p1: tPlaygroundPage('h2_4_p1'),
-    h2_5: tPlaygroundPage('h2_5'),
-    h2_5_p1: tPlaygroundPage('h2_5_p1'),
-    h2_6: tPlaygroundPage('h2_6'),
-    h2_6_p1: tPlaygroundPage('h2_6_p1'),
   }
 }

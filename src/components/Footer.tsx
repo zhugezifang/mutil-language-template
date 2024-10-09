@@ -38,7 +38,7 @@ export default function Footer({
                 src="/favicon.svg"
                 width={32}
                 height={32}
-                alt="Virtual Try On"
+                alt="Image Splitter"
               />
             </a>
             <p className="text-sm text-white">
@@ -56,13 +56,7 @@ export default function Footer({
               <div className="mt-10 md:mt-0">
                 <div className="text-sm font-semibold leading-6 text-white">Friends</div>
                 <ul role="list" className="mt-6 space-y-4">
-                        <li>
-                          <Link href={`/${locale}/colour-virtual-try-on`}
-                                target={"_blank"}
-                                className="text-sm leading-6 text-white ">
-                            Colour Virtual Try On
-                          </Link>
-                        </li>
+                        
                 </ul>
               </div>
             </div>
@@ -118,7 +112,7 @@ export default function Footer({
               target="_blank"
               className="text-white font-bold"
             >
-              Virtual Try On
+              Image Splitter
             </a>{" "}
             All rights reserved.
           </p>
