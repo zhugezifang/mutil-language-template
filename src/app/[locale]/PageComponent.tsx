@@ -5,8 +5,9 @@ import Footer from '~/components/Footer';
 import {useState} from "react";
 import {randomVideo} from "~/data/openaiVideo";
 import HeadInfo from "~/components/HeadInfo";
-import ImageSplitter from "~/components/ImageSplitter";
+import ImageSplitter from "~/components/BMICalculator";
 import {useCommonContext} from "~/context/common-context";
+import { imageConfigDefault } from "next/dist/shared/lib/image-config";
 
 const PageComponent = ({
                          locale = '',
