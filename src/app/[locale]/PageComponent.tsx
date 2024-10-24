@@ -10,6 +10,8 @@ import {useCommonContext} from "~/context/common-context";
 
 const PageComponent = ({
                          locale = '',
+                         indexTestimonialText,
+                         indexPlayInfoText,
                          navMenuText,
                          indexLanguageText,
                          indexFeatureText,
@@ -131,6 +133,376 @@ const PageComponent = ({
                 <ImageSplitter locale={locale} indexLanguageText={indexLanguageText}/>
             </div>
 
+            <section id="how-it-works" className="py-16 bg-gray-50">
+              <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 className="text-3xl font-bold text-center text-gray-800 mb-4">{indexPlayInfoText.h2_0}</h2>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                  <div className="bg-white p-6 rounded-lg shadow-md">
+                    <div className="flex justify-center mb-4">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-circle-play w-12 h-12 text-indigo-600">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <polygon points="10 8 16 12 10 16 10 8"></polygon>
+                      </svg>
+                    </div>
+                    <h3 className="text-xl font-semibold text-gray-800 mb-2 text-center">{indexPlayInfoText.h2_1}</h3>
+                    <p className="text-gray-600 text-center">{indexPlayInfoText.h2_1_p1}</p></div>
+                  <div className="bg-white p-6 rounded-lg shadow-md">
+                    <div className="flex justify-center mb-4">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-mouse-pointer w-12 h-12 text-indigo-600">
+                        <path d="M12.586 12.586 19 19"></path>
+                        <path d="M3.688 3.037a.497.497 0 0 0-.651.651l6.5 15.999a.501.501 0 0 0 .947-.062l1.569-6.083a2 2 0 0 1 1.448-1.479l6.124-1.579a.5.5 0 0 0 .063-.947z"></path>
+                      </svg>
+                    </div>
+                    <h3 className="text-xl font-semibold text-gray-800 mb-2 text-center">{indexPlayInfoText.h2_2}</h3>
+                    <p className="text-gray-600 text-center">{indexPlayInfoText.h2_2_p1}</p></div>
+                  <div className="bg-white p-6 rounded-lg shadow-md">
+                    <div className="flex justify-center mb-4">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-move w-12 h-12 text-indigo-600">
+                        <path d="M12 2v20"></path>
+                        <path d="m15 19-3 3-3-3"></path>
+                        <path d="m19 9 3 3-3 3"></path>
+                        <path d="M2 12h20"></path>
+                        <path d="m5 9-3 3 3 3"></path>
+                        <path d="m9 5 3-3 3 3"></path>
+                      </svg>
+                    </div>
+                    <h3 className="text-xl font-semibold text-gray-800 mb-2 text-center">{indexPlayInfoText.h2_3}</h3>
+                    <p className="text-gray-600 text-center">{indexPlayInfoText.h2_3_p1}</p></div>
+                  <div className="bg-white p-6 rounded-lg shadow-md">
+                    <div className="flex justify-center mb-4">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-circle-check-big w-12 h-12 text-indigo-600">
+                        <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                        <path d="m9 11 3 3L22 4"></path>
+                      </svg>
+                    </div>
+                    <h3 className="text-xl font-semibold text-gray-800 mb-2 text-center">{indexPlayInfoText.h2_4}</h3>
+                    <p className="text-gray-600 text-center">{indexPlayInfoText.h2_4_p1}</p></div>
+                </div>
+              </div>
+            </section>
+
+            <section id="perfecttidylevel" className="bg-indigo-100 py-12">
+              <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 className="text-3xl font-bold text-center text-indigo-800 mb-8">Perfect Tidy Levels</h2>
+                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-3">
+                  <div className="bg-white p-2 rounded-lg shadow-md text-center">
+                    <p className="text-xs font-semibold text-indigo-600 whitespace-nowrap overflow-hidden text-ellipsis">Perfect Tidy Level
+                      1</p></div>
+                  <div className="bg-white p-2 rounded-lg shadow-md text-center">
+                    <p className="text-xs font-semibold text-indigo-600 whitespace-nowrap overflow-hidden text-ellipsis">Perfect Tidy Level
+                      2</p></div>
+                  <div className="bg-white p-2 rounded-lg shadow-md text-center">
+                    <p className="text-xs font-semibold text-indigo-600 whitespace-nowrap overflow-hidden text-ellipsis">Perfect Tidy Level
+                      3</p></div>
+                  <div className="bg-white p-2 rounded-lg shadow-md text-center">
+                    <p className="text-xs font-semibold text-indigo-600 whitespace-nowrap overflow-hidden text-ellipsis">Perfect Tidy Level
+                      4</p></div>
+                  <div className="bg-white p-2 rounded-lg shadow-md text-center">
+                    <p className="text-xs font-semibold text-indigo-600 whitespace-nowrap overflow-hidden text-ellipsis">Perfect Tidy Level
+                      5</p></div>
+                  <div className="bg-white p-2 rounded-lg shadow-md text-center">
+                    <p className="text-xs font-semibold text-indigo-600 whitespace-nowrap overflow-hidden text-ellipsis">Perfect Tidy Level
+                      6</p></div>
+                  <div className="bg-white p-2 rounded-lg shadow-md text-center">
+                    <p className="text-xs font-semibold text-indigo-600 whitespace-nowrap overflow-hidden text-ellipsis">Perfect Tidy Level
+                      7</p></div>
+                  <div className="bg-white p-2 rounded-lg shadow-md text-center">
+                    <p className="text-xs font-semibold text-indigo-600 whitespace-nowrap overflow-hidden text-ellipsis">Perfect Tidy Level
+                      8</p></div>
+                  <div className="bg-white p-2 rounded-lg shadow-md text-center">
+                    <p className="text-xs font-semibold text-indigo-600 whitespace-nowrap overflow-hidden text-ellipsis">Perfect Tidy Level
+                      9</p></div>
+                  <div className="bg-white p-2 rounded-lg shadow-md text-center">
+                    <p className="text-xs font-semibold text-indigo-600 whitespace-nowrap overflow-hidden text-ellipsis">Perfect Tidy Level
+                      10</p></div>
+                  <div className="bg-white p-2 rounded-lg shadow-md text-center">
+                    <p className="text-xs font-semibold text-indigo-600 whitespace-nowrap overflow-hidden text-ellipsis">Perfect Tidy Level
+                      11</p></div>
+                  <div className="bg-white p-2 rounded-lg shadow-md text-center">
+                    <p className="text-xs font-semibold text-indigo-600 whitespace-nowrap overflow-hidden text-ellipsis">Perfect Tidy Level
+                      12</p></div>
+                  <div className="bg-white p-2 rounded-lg shadow-md text-center">
+                    <p className="text-xs font-semibold text-indigo-600 whitespace-nowrap overflow-hidden text-ellipsis">Perfect Tidy Level
+                      13</p></div>
+                  <div className="bg-white p-2 rounded-lg shadow-md text-center">
+                    <p className="text-xs font-semibold text-indigo-600 whitespace-nowrap overflow-hidden text-ellipsis">Perfect Tidy Level
+                      14</p></div>
+                  <div className="bg-white p-2 rounded-lg shadow-md text-center">
+                    <p className="text-xs font-semibold text-indigo-600 whitespace-nowrap overflow-hidden text-ellipsis">Perfect Tidy Level
+                      15</p></div>
+                  <div className="bg-white p-2 rounded-lg shadow-md text-center">
+                    <p className="text-xs font-semibold text-indigo-600 whitespace-nowrap overflow-hidden text-ellipsis">Perfect Tidy Level
+                      16</p></div>
+                  <div className="bg-white p-2 rounded-lg shadow-md text-center">
+                    <p className="text-xs font-semibold text-indigo-600 whitespace-nowrap overflow-hidden text-ellipsis">Perfect Tidy Level
+                      17</p></div>
+                  <div className="bg-white p-2 rounded-lg shadow-md text-center">
+                    <p className="text-xs font-semibold text-indigo-600 whitespace-nowrap overflow-hidden text-ellipsis">Perfect Tidy Level
+                      18</p></div>
+                  <div className="bg-white p-2 rounded-lg shadow-md text-center">
+                    <p className="text-xs font-semibold text-indigo-600 whitespace-nowrap overflow-hidden text-ellipsis">Perfect Tidy Level
+                      19</p></div>
+                  <div className="bg-white p-2 rounded-lg shadow-md text-center">
+                    <p className="text-xs font-semibold text-indigo-600 whitespace-nowrap overflow-hidden text-ellipsis">Perfect Tidy Level
+                      20</p></div>
+                  <div className="bg-white p-2 rounded-lg shadow-md text-center">
+                    <p className="text-xs font-semibold text-indigo-600 whitespace-nowrap overflow-hidden text-ellipsis">Perfect Tidy Level
+                      21</p></div>
+                  <div className="bg-white p-2 rounded-lg shadow-md text-center">
+                    <p className="text-xs font-semibold text-indigo-600 whitespace-nowrap overflow-hidden text-ellipsis">Perfect Tidy Level
+                      22</p></div>
+                  <div className="bg-white p-2 rounded-lg shadow-md text-center">
+                    <p className="text-xs font-semibold text-indigo-600 whitespace-nowrap overflow-hidden text-ellipsis">Perfect Tidy Level
+                      23</p></div>
+                  <div className="bg-white p-2 rounded-lg shadow-md text-center">
+                    <p className="text-xs font-semibold text-indigo-600 whitespace-nowrap overflow-hidden text-ellipsis">Perfect Tidy Level
+                      24</p></div>
+                  <div className="bg-white p-2 rounded-lg shadow-md text-center">
+                    <p className="text-xs font-semibold text-indigo-600 whitespace-nowrap overflow-hidden text-ellipsis">Perfect Tidy Level
+                      25</p></div>
+                  <div className="bg-white p-2 rounded-lg shadow-md text-center">
+                    <p className="text-xs font-semibold text-indigo-600 whitespace-nowrap overflow-hidden text-ellipsis">Perfect Tidy Level
+                      26</p></div>
+                  <div className="bg-white p-2 rounded-lg shadow-md text-center">
+                    <p className="text-xs font-semibold text-indigo-600 whitespace-nowrap overflow-hidden text-ellipsis">Perfect Tidy Level
+                      27</p></div>
+                  <div className="bg-white p-2 rounded-lg shadow-md text-center">
+                    <p className="text-xs font-semibold text-indigo-600 whitespace-nowrap overflow-hidden text-ellipsis">Perfect Tidy Level
+                      28</p></div>
+                  <div className="bg-white p-2 rounded-lg shadow-md text-center">
+                    <p className="text-xs font-semibold text-indigo-600 whitespace-nowrap overflow-hidden text-ellipsis">Perfect Tidy Level
+                      29</p></div>
+                  <div className="bg-white p-2 rounded-lg shadow-md text-center">
+                    <p className="text-xs font-semibold text-indigo-600 whitespace-nowrap overflow-hidden text-ellipsis">Perfect Tidy Level
+                      30</p></div>
+                  <div className="bg-white p-2 rounded-lg shadow-md text-center">
+                    <p className="text-xs font-semibold text-indigo-600 whitespace-nowrap overflow-hidden text-ellipsis">Perfect Tidy Level
+                      31</p></div>
+                  <div className="bg-white p-2 rounded-lg shadow-md text-center">
+                    <p className="text-xs font-semibold text-indigo-600 whitespace-nowrap overflow-hidden text-ellipsis">Perfect Tidy Level
+                      32</p></div>
+                  <div className="bg-white p-2 rounded-lg shadow-md text-center">
+                    <p className="text-xs font-semibold text-indigo-600 whitespace-nowrap overflow-hidden text-ellipsis">Perfect Tidy Level
+                      33</p></div>
+                  <div className="bg-white p-2 rounded-lg shadow-md text-center">
+                    <p className="text-xs font-semibold text-indigo-600 whitespace-nowrap overflow-hidden text-ellipsis">Perfect Tidy Level
+                      34</p></div>
+                  <div className="bg-white p-2 rounded-lg shadow-md text-center">
+                    <p className="text-xs font-semibold text-indigo-600 whitespace-nowrap overflow-hidden text-ellipsis">Perfect Tidy Level
+                      35</p></div>
+                  <div className="bg-white p-2 rounded-lg shadow-md text-center">
+                    <p className="text-xs font-semibold text-indigo-600 whitespace-nowrap overflow-hidden text-ellipsis">Perfect Tidy Level
+                      36</p></div>
+                  <div className="bg-white p-2 rounded-lg shadow-md text-center">
+                    <p className="text-xs font-semibold text-indigo-600 whitespace-nowrap overflow-hidden text-ellipsis">Perfect Tidy Level
+                      37</p></div>
+                  <div className="bg-white p-2 rounded-lg shadow-md text-center">
+                    <p className="text-xs font-semibold text-indigo-600 whitespace-nowrap overflow-hidden text-ellipsis">Perfect Tidy Level
+                      38</p></div>
+                  <div className="bg-white p-2 rounded-lg shadow-md text-center">
+                    <p className="text-xs font-semibold text-indigo-600 whitespace-nowrap overflow-hidden text-ellipsis">Perfect Tidy Level
+                      39</p></div>
+                  <div className="bg-white p-2 rounded-lg shadow-md text-center">
+                    <p className="text-xs font-semibold text-indigo-600 whitespace-nowrap overflow-hidden text-ellipsis">Perfect Tidy Level
+                      40</p></div>
+                  <div className="bg-white p-2 rounded-lg shadow-md text-center">
+                    <p className="text-xs font-semibold text-indigo-600 whitespace-nowrap overflow-hidden text-ellipsis">Perfect Tidy Level
+                      41</p></div>
+                  <div className="bg-white p-2 rounded-lg shadow-md text-center">
+                    <p className="text-xs font-semibold text-indigo-600 whitespace-nowrap overflow-hidden text-ellipsis">Perfect Tidy Level
+                      42</p></div>
+                  <div className="bg-white p-2 rounded-lg shadow-md text-center">
+                    <p className="text-xs font-semibold text-indigo-600 whitespace-nowrap overflow-hidden text-ellipsis">Perfect Tidy Level
+                      43</p></div>
+                  <div className="bg-white p-2 rounded-lg shadow-md text-center">
+                    <p className="text-xs font-semibold text-indigo-600 whitespace-nowrap overflow-hidden text-ellipsis">Perfect Tidy Level
+                      44</p></div>
+                  <div className="bg-white p-2 rounded-lg shadow-md text-center">
+                    <p className="text-xs font-semibold text-indigo-600 whitespace-nowrap overflow-hidden text-ellipsis">Perfect Tidy Level
+                      45</p></div>
+                  <div className="bg-white p-2 rounded-lg shadow-md text-center">
+                    <p className="text-xs font-semibold text-indigo-600 whitespace-nowrap overflow-hidden text-ellipsis">Perfect Tidy Level
+                      46</p></div>
+                  <div className="bg-white p-2 rounded-lg shadow-md text-center">
+                    <p className="text-xs font-semibold text-indigo-600 whitespace-nowrap overflow-hidden text-ellipsis">Perfect Tidy Level
+                      47</p></div>
+                  <div className="bg-white p-2 rounded-lg shadow-md text-center">
+                    <p className="text-xs font-semibold text-indigo-600 whitespace-nowrap overflow-hidden text-ellipsis">Perfect Tidy Level
+                      48</p></div>
+                  <div className="bg-white p-2 rounded-lg shadow-md text-center">
+                    <p className="text-xs font-semibold text-indigo-600 whitespace-nowrap overflow-hidden text-ellipsis">Perfect Tidy Level
+                      49</p></div>
+                  <div className="bg-white p-2 rounded-lg shadow-md text-center">
+                    <p className="text-xs font-semibold text-indigo-600 whitespace-nowrap overflow-hidden text-ellipsis">Perfect Tidy Level
+                      50</p></div>
+                  <div className="bg-white p-2 rounded-lg shadow-md text-center">
+                    <p className="text-xs font-semibold text-indigo-600 whitespace-nowrap overflow-hidden text-ellipsis">Perfect Tidy Level
+                      51</p></div>
+                  <div className="bg-white p-2 rounded-lg shadow-md text-center">
+                    <p className="text-xs font-semibold text-indigo-600 whitespace-nowrap overflow-hidden text-ellipsis">Perfect Tidy Level
+                      52</p></div>
+                  <div className="bg-white p-2 rounded-lg shadow-md text-center">
+                    <p className="text-xs font-semibold text-indigo-600 whitespace-nowrap overflow-hidden text-ellipsis">Perfect Tidy Level
+                      53</p></div>
+                  <div className="bg-white p-2 rounded-lg shadow-md text-center">
+                    <p className="text-xs font-semibold text-indigo-600 whitespace-nowrap overflow-hidden text-ellipsis">Perfect Tidy Level
+                      54</p></div>
+                  <div className="bg-white p-2 rounded-lg shadow-md text-center">
+                    <p className="text-xs font-semibold text-indigo-600 whitespace-nowrap overflow-hidden text-ellipsis">Perfect Tidy Level
+                      55</p></div>
+                  <div className="bg-white p-2 rounded-lg shadow-md text-center">
+                    <p className="text-xs font-semibold text-indigo-600 whitespace-nowrap overflow-hidden text-ellipsis">Perfect Tidy Level
+                      56</p></div>
+                  <div className="bg-white p-2 rounded-lg shadow-md text-center">
+                    <p className="text-xs font-semibold text-indigo-600 whitespace-nowrap overflow-hidden text-ellipsis">Perfect Tidy Level
+                      57</p></div>
+                  <div className="bg-white p-2 rounded-lg shadow-md text-center">
+                    <p className="text-xs font-semibold text-indigo-600 whitespace-nowrap overflow-hidden text-ellipsis">Perfect Tidy Level
+                      58</p></div>
+                  <div className="bg-white p-2 rounded-lg shadow-md text-center">
+                    <p className="text-xs font-semibold text-indigo-600 whitespace-nowrap overflow-hidden text-ellipsis">Perfect Tidy Level
+                      59</p></div>
+                  <div className="bg-white p-2 rounded-lg shadow-md text-center">
+                    <p className="text-xs font-semibold text-indigo-600 whitespace-nowrap overflow-hidden text-ellipsis">Perfect Tidy Level
+                      60</p></div>
+                  <div className="bg-white p-2 rounded-lg shadow-md text-center">
+                    <p className="text-xs font-semibold text-indigo-600 whitespace-nowrap overflow-hidden text-ellipsis">Perfect Tidy Level
+                      61</p></div>
+                  <div className="bg-white p-2 rounded-lg shadow-md text-center">
+                    <p className="text-xs font-semibold text-indigo-600 whitespace-nowrap overflow-hidden text-ellipsis">Perfect Tidy Level
+                      62</p></div>
+                  <div className="bg-white p-2 rounded-lg shadow-md text-center">
+                    <p className="text-xs font-semibold text-indigo-600 whitespace-nowrap overflow-hidden text-ellipsis">Perfect Tidy Level
+                      63</p></div>
+                  <div className="bg-white p-2 rounded-lg shadow-md text-center">
+                    <p className="text-xs font-semibold text-indigo-600 whitespace-nowrap overflow-hidden text-ellipsis">Perfect Tidy Level
+                      64</p></div>
+                  <div className="bg-white p-2 rounded-lg shadow-md text-center">
+                    <p className="text-xs font-semibold text-indigo-600 whitespace-nowrap overflow-hidden text-ellipsis">Perfect Tidy Level
+                      65</p></div>
+                  <div className="bg-white p-2 rounded-lg shadow-md text-center">
+                    <p className="text-xs font-semibold text-indigo-600 whitespace-nowrap overflow-hidden text-ellipsis">Perfect Tidy Level
+                      66</p></div>
+                  <div className="bg-white p-2 rounded-lg shadow-md text-center">
+                    <p className="text-xs font-semibold text-indigo-600 whitespace-nowrap overflow-hidden text-ellipsis">Perfect Tidy Level
+                      67</p></div>
+                  <div className="bg-white p-2 rounded-lg shadow-md text-center">
+                    <p className="text-xs font-semibold text-indigo-600 whitespace-nowrap overflow-hidden text-ellipsis">Perfect Tidy Level
+                      68</p></div>
+                  <div className="bg-white p-2 rounded-lg shadow-md text-center">
+                    <p className="text-xs font-semibold text-indigo-600 whitespace-nowrap overflow-hidden text-ellipsis">Perfect Tidy Level
+                      69</p></div>
+                  <div className="bg-white p-2 rounded-lg shadow-md text-center">
+                    <p className="text-xs font-semibold text-indigo-600 whitespace-nowrap overflow-hidden text-ellipsis">Perfect Tidy Level
+                      70</p></div>
+                  <div className="bg-white p-2 rounded-lg shadow-md text-center">
+                    <p className="text-xs font-semibold text-indigo-600 whitespace-nowrap overflow-hidden text-ellipsis">Perfect Tidy Level
+                      71</p></div>
+                  <div className="bg-white p-2 rounded-lg shadow-md text-center">
+                    <p className="text-xs font-semibold text-indigo-600 whitespace-nowrap overflow-hidden text-ellipsis">Perfect Tidy Level
+                      72</p></div>
+                  <div className="bg-white p-2 rounded-lg shadow-md text-center">
+                    <p className="text-xs font-semibold text-indigo-600 whitespace-nowrap overflow-hidden text-ellipsis">Perfect Tidy Level
+                      73</p></div>
+                  <div className="bg-white p-2 rounded-lg shadow-md text-center">
+                    <p className="text-xs font-semibold text-indigo-600 whitespace-nowrap overflow-hidden text-ellipsis">Perfect Tidy Level
+                      74</p></div>
+                  <div className="bg-white p-2 rounded-lg shadow-md text-center">
+                    <p className="text-xs font-semibold text-indigo-600 whitespace-nowrap overflow-hidden text-ellipsis">Perfect Tidy Level
+                      75</p></div>
+                  <div className="bg-white p-2 rounded-lg shadow-md text-center">
+                    <p className="text-xs font-semibold text-indigo-600 whitespace-nowrap overflow-hidden text-ellipsis">Perfect Tidy Level
+                      76</p></div>
+                  <div className="bg-white p-2 rounded-lg shadow-md text-center">
+                    <p className="text-xs font-semibold text-indigo-600 whitespace-nowrap overflow-hidden text-ellipsis">Perfect Tidy Level
+                      77</p></div>
+                  <div className="bg-white p-2 rounded-lg shadow-md text-center">
+                    <p className="text-xs font-semibold text-indigo-600 whitespace-nowrap overflow-hidden text-ellipsis">Perfect Tidy Level
+                      78</p></div>
+                  <div className="bg-white p-2 rounded-lg shadow-md text-center">
+                    <p className="text-xs font-semibold text-indigo-600 whitespace-nowrap overflow-hidden text-ellipsis">Perfect Tidy Level
+                      79</p></div>
+                  <div className="bg-white p-2 rounded-lg shadow-md text-center">
+                    <p className="text-xs font-semibold text-indigo-600 whitespace-nowrap overflow-hidden text-ellipsis">Perfect Tidy Level
+                      80</p></div>
+                  <div className="bg-white p-2 rounded-lg shadow-md text-center">
+                    <p className="text-xs font-semibold text-indigo-600 whitespace-nowrap overflow-hidden text-ellipsis">Perfect Tidy Level
+                      81</p></div>
+                  <div className="bg-white p-2 rounded-lg shadow-md text-center">
+                    <p className="text-xs font-semibold text-indigo-600 whitespace-nowrap overflow-hidden text-ellipsis">Perfect Tidy Level
+                      82</p></div>
+                  <div className="bg-white p-2 rounded-lg shadow-md text-center">
+                    <p className="text-xs font-semibold text-indigo-600 whitespace-nowrap overflow-hidden text-ellipsis">Perfect Tidy Level
+                      83</p></div>
+                  <div className="bg-white p-2 rounded-lg shadow-md text-center">
+                    <p className="text-xs font-semibold text-indigo-600 whitespace-nowrap overflow-hidden text-ellipsis">Perfect Tidy Level
+                      84</p></div>
+                  <div className="bg-white p-2 rounded-lg shadow-md text-center">
+                    <p className="text-xs font-semibold text-indigo-600 whitespace-nowrap overflow-hidden text-ellipsis">Perfect Tidy Level
+                      85</p></div>
+                  <div className="bg-white p-2 rounded-lg shadow-md text-center">
+                    <p className="text-xs font-semibold text-indigo-600 whitespace-nowrap overflow-hidden text-ellipsis">Perfect Tidy Level
+                      86</p></div>
+                  <div className="bg-white p-2 rounded-lg shadow-md text-center">
+                    <p className="text-xs font-semibold text-indigo-600 whitespace-nowrap overflow-hidden text-ellipsis">Perfect Tidy Level
+                      87</p></div>
+                  <div className="bg-white p-2 rounded-lg shadow-md text-center">
+                    <p className="text-xs font-semibold text-indigo-600 whitespace-nowrap overflow-hidden text-ellipsis">Perfect Tidy Level
+                      88</p></div>
+                  <div className="bg-white p-2 rounded-lg shadow-md text-center">
+                    <p className="text-xs font-semibold text-indigo-600 whitespace-nowrap overflow-hidden text-ellipsis">Perfect Tidy Level
+                      89</p></div>
+                  <div className="bg-white p-2 rounded-lg shadow-md text-center">
+                    <p className="text-xs font-semibold text-indigo-600 whitespace-nowrap overflow-hidden text-ellipsis">Perfect Tidy Level
+                      90</p></div>
+                  <div className="bg-white p-2 rounded-lg shadow-md text-center">
+                    <p className="text-xs font-semibold text-indigo-600 whitespace-nowrap overflow-hidden text-ellipsis">Perfect Tidy Level
+                      91</p></div>
+                  <div className="bg-white p-2 rounded-lg shadow-md text-center">
+                    <p className="text-xs font-semibold text-indigo-600 whitespace-nowrap overflow-hidden text-ellipsis">Perfect Tidy Level
+                      92</p></div>
+                  <div className="bg-white p-2 rounded-lg shadow-md text-center">
+                    <p className="text-xs font-semibold text-indigo-600 whitespace-nowrap overflow-hidden text-ellipsis">Perfect Tidy Level
+                      93</p></div>
+                  <div className="bg-white p-2 rounded-lg shadow-md text-center">
+                    <p className="text-xs font-semibold text-indigo-600 whitespace-nowrap overflow-hidden text-ellipsis">Perfect Tidy Level
+                      94</p></div>
+                  <div className="bg-white p-2 rounded-lg shadow-md text-center">
+                    <p className="text-xs font-semibold text-indigo-600 whitespace-nowrap overflow-hidden text-ellipsis">Perfect Tidy Level
+                      95</p></div>
+                  <div className="bg-white p-2 rounded-lg shadow-md text-center">
+                    <p className="text-xs font-semibold text-indigo-600 whitespace-nowrap overflow-hidden text-ellipsis">Perfect Tidy Level
+                      96</p></div>
+                  <div className="bg-white p-2 rounded-lg shadow-md text-center">
+                    <p className="text-xs font-semibold text-indigo-600 whitespace-nowrap overflow-hidden text-ellipsis">Perfect Tidy Level
+                      97</p></div>
+                  <div className="bg-white p-2 rounded-lg shadow-md text-center">
+                    <p className="text-xs font-semibold text-indigo-600 whitespace-nowrap overflow-hidden text-ellipsis">Perfect Tidy Level
+                      98</p></div>
+                  <div className="bg-white p-2 rounded-lg shadow-md text-center">
+                    <p className="text-xs font-semibold text-indigo-600 whitespace-nowrap overflow-hidden text-ellipsis">Perfect Tidy Level
+                      99</p></div>
+                  <div className="bg-white p-2 rounded-lg shadow-md text-center">
+                    <p className="text-xs font-semibold text-indigo-600 whitespace-nowrap overflow-hidden text-ellipsis">Perfect Tidy Level
+                      100</p></div>
+                  <div className="bg-white p-2 rounded-lg shadow-md text-center">
+                    <p className="text-xs font-semibold text-indigo-600 whitespace-nowrap overflow-hidden text-ellipsis">Perfect Tidy Level
+                      101</p></div>
+                  <div className="bg-white p-2 rounded-lg shadow-md text-center">
+                    <p className="text-xs font-semibold text-indigo-600 whitespace-nowrap overflow-hidden text-ellipsis">Perfect Tidy Level
+                      102</p></div>
+                  <div className="bg-white p-2 rounded-lg shadow-md text-center">
+                    <p className="text-xs font-semibold text-indigo-600 whitespace-nowrap overflow-hidden text-ellipsis">Perfect Tidy Level
+                      103</p></div>
+                  <div className="bg-white p-2 rounded-lg shadow-md text-center">
+                    <p className="text-xs font-semibold text-indigo-600 whitespace-nowrap overflow-hidden text-ellipsis">Perfect Tidy Level
+                      104</p></div>
+                  <div className="bg-white p-2 rounded-lg shadow-md text-center">
+                    <p className="text-xs font-semibold text-indigo-600 whitespace-nowrap overflow-hidden text-ellipsis">Perfect Tidy Level
+                      105</p></div>
+                </div>
+              </div>
+            </section>
             
             <section className="py-8 md:py-12 lg:py-16">
               <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
@@ -206,6 +578,78 @@ const PageComponent = ({
                       </div>
                     </div>
                   </div>
+                </div>
+              </div>
+            </section>
+
+            <section id="testimonials" className="py-16 bg-indigo-50">
+              <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 className="text-3xl font-bold text-center text-gray-800 mb-4">{indexTestimonialText.h2_0}</h2>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                  <div className="bg-white p-6 rounded-lg shadow-md flex flex-col items-center">
+                    <div className="flex items-center mb-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-star w-5 h-5 text-yellow-400 fill-current">
+                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-star w-5 h-5 text-yellow-400 fill-current">
+                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-star w-5 h-5 text-yellow-400 fill-current">
+                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-star w-5 h-5 text-yellow-400 fill-current">
+                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-star w-5 h-5 text-yellow-400 fill-current">
+                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                      </svg>
+                    </div>
+                    <p className="text-gray-600 text-center mb-4">
+                    {indexTestimonialText.h2_1_p1}                      
+                    </p>
+                    <p className="text-gray-800 font-semibold">Sarah J.</p></div>
+                  <div className="bg-white p-6 rounded-lg shadow-md flex flex-col items-center">
+                    <div className="flex items-center mb-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-star w-5 h-5 text-yellow-400 fill-current">
+                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-star w-5 h-5 text-yellow-400 fill-current">
+                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-star w-5 h-5 text-yellow-400 fill-current">
+                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-star w-5 h-5 text-yellow-400 fill-current">
+                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-star w-5 h-5 text-gray-300">
+                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                      </svg>
+                    </div>
+                    <p className="text-gray-600 text-center mb-4">
+                    {indexTestimonialText.h2_2_p1}                              </p>
+                    <p className="text-gray-800 font-semibold">Mike T.</p></div>
+                  <div className="bg-white p-6 rounded-lg shadow-md flex flex-col items-center">
+                    <div className="flex items-center mb-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-star w-5 h-5 text-yellow-400 fill-current">
+                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-star w-5 h-5 text-yellow-400 fill-current">
+                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-star w-5 h-5 text-yellow-400 fill-current">
+                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-star w-5 h-5 text-yellow-400 fill-current">
+                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-star w-5 h-5 text-yellow-400 fill-current">
+                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                      </svg>
+                    </div>
+                    <p className="text-gray-600 text-center mb-4">
+                    {indexTestimonialText.h2_3_p1}                            </p>
+                    <p className="text-gray-800 font-semibold">Emily R.</p></div>
                 </div>
               </div>
             </section>

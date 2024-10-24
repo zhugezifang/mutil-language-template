@@ -44,6 +44,31 @@ export const getQuestionLanguageText = async () => {
   }
 }
 
+export const getPlayInfoLanguageText = async () => {
+  const tIndexQuestion = await getTranslations('playInfos');
+  return {
+    h2_0: tIndexQuestion('h2_0'),
+    h2_1: tIndexQuestion('h2_1'),
+    h2_1_p1: tIndexQuestion('h2_1_p1'),
+    h2_2: tIndexQuestion('h2_2'),
+    h2_2_p1: tIndexQuestion('h2_2_p1'),
+    h2_3: tIndexQuestion('h2_3'),
+    h2_3_p1: tIndexQuestion('h2_3_p1'),
+    h2_4: tIndexQuestion('h2_4'),
+    h2_4_p1: tIndexQuestion('h2_4_p1'),
+  }
+}
+
+export const getTestimonialInfos = async () => {
+  const tIndexQuestion = await getTranslations('testimonialInfos');
+  return {
+    h2_0: tIndexQuestion('h2_0'),
+    h2_1_p1: tIndexQuestion('h2_1_p1'),
+    h2_2_p1: tIndexQuestion('h2_2_p1'),
+    h2_3_p1: tIndexQuestion('h2_3_p1'),
+  }
+}
+
 
 export const getFeatureLanguageText = async () => {
   const tIndexQuestion = await getTranslations('featureInfos');

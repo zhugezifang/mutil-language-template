@@ -3,16 +3,6 @@ import Link from "next/link";
 
 const navigation = {
   product: [
-    {name: 'Tap4 AI Tools Diresctory', href: 'https://tap4.ai/'},
-    {name: 'iuu AI', href: 'https://iuu.ai'},
-    {name: 'MagicBox.Tools - AI Tools Directory', href: 'https://magicbox.tools/'},
-    {name: 'Woy AI Tools', href: 'https://woy.ai/'},
-    {name: 'AI With Me', href: 'https://aiwith.me'},
-    {name: 'AIEasy.life AI Tools', href: 'https://aieasy.life/'},
-    {name: 'Bai.tools', href: 'https://bai.tools/'},
-    {name: 'AIPURE AI', href: 'https://aipure.ai/'},
-    {name: 'All in AI Tools', href: 'https://allinai.tools'},
-    {name: 'RightAI Tools Diresctory', href: 'https://right-ai.com/'}
   ],
   legal: [
     {name: 'Privacy Policy', href: '/privacy-policy'},

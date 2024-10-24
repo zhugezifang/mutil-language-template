@@ -74,59 +74,13 @@ const ImageSplitter = ({
   };
 
   return (
-    <div className="container mx-auto py-10 px-4 sm:px-6 lg:px-8">
-      <div className="flex flex-col items-center">
-        <input
-          type="file"
-          accept="image/*"
-          onChange={handleImageUpload}
-          className="mb-4 p-2 border border-gray-300 rounded-lg w-full sm:w-auto"
-        />
-        <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mb-4 w-full sm:w-auto">
-          <label className="flex flex-col items-center w-full sm:w-auto">
-            <span className="text-gray-700">{indexLanguageText.RowText}</span>
-            <input
-              type="number"
-              value={rows}
-              onChange={(e) => setRows(Number(e.target.value))}
-              min="1"
-              className="mt-1 p-2 border border-gray-300 rounded-lg w-full sm:w-auto"
-            />
-          </label>
-          <label className="flex flex-col items-center w-full sm:w-auto">
-            <span className="text-gray-700">{indexLanguageText.ColText}</span>
-            <input
-              type="number"
-              value={cols}
-              onChange={(e) => setCols(Number(e.target.value))}
-              min="1"
-              className="mt-1 p-2 border border-gray-300 rounded-lg w-full sm:w-auto"
-            />
-          </label>
-        </div>
-        <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mb-4 w-full sm:w-auto">
-          <button
-            onClick={handleSplitAndDisplay}
-            className="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 w-full sm:w-auto"
-          >
-            {indexLanguageText.btn1}
-          </button>
-          <button
-            onClick={handleDownload}
-            disabled={chunks.length === 0}
-            className={`px-4 py-2 rounded-lg w-full sm:w-auto ${chunks.length === 0 ? 'bg-gray-400' : 'bg-green-500 text-white hover:bg-green-600'}`}
-          >
-            {indexLanguageText.btn2}
-          </button>
-        </div>
-        <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 w-full sm:w-auto">
-          {chunks.map((chunk, index) => (
-            <img key={index} src={chunk} alt={`Chunk ${index}`} className="border border-gray-300 rounded-lg" />
-          ))}
-        </div>
-        {image && <img src={image} alt="Uploaded" className="hidden" />}
-      </div>
-    </div>
+              <div
+                className={"w-[100%] mx-auto rounded-tl-[30px] rounded-tr-[30px] object-fill"} >
+                        <iframe src="https://html5.gamedistribution.com/rvvASMiM/88adc972f6bc4956be084fe44998a531/index.html?utm_source=uutool.cn&utm_medium=organizer-master&utm_campaign=block-and-redirect&gd_zone_config=eyJwYXJlbnRVUkwiOiJodHRwczovL2h0bWw1LmdhbWVkaXN0cmlidXRpb24uY29tLzg4YWRjOTcyZjZiYzQ5NTZiZTA4NGZlNDQ5OThhNTMxLz91dG1fc291cmNlPXV1dG9vbC5jbiZ1dG1fbWVkaXVtPW9yZ2FuaXplci1tYXN0ZXImdXRtX2NhbXBhaWduPWJsb2NrLWFuZC1yZWRpcmVjdCIsInBhcmVudERvbWFpbiI6Imh0bWw1LmdhbWVkaXN0cmlidXRpb24uY29tIiwidG9wRG9tYWluIjoiaHRtbDUuZ2FtZWRpc3RyaWJ1dGlvbi5jb20iLCJoYXNJbXByZXNzaW9uIjpmYWxzZSwibG9hZGVyRW5hYmxlZCI6dHJ1ZSwiaG9zdCI6Imh0bWw1LmdhbWVkaXN0cmlidXRpb24uY29tIiwidmVyc2lvbiI6IjEuNS4xNyJ9" allow="autoplay"  style={{ top: '0px', left: '0px',width: '100%', height: '800px'}}></iframe>
+
+              </div>
+            
+    
 
   );
 };
