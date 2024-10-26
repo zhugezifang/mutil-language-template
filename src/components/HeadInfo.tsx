@@ -10,7 +10,8 @@ const HeadInfo = ({
     <>
       <title>{title}</title>
       <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4158779929727637"
-           crossOrigin="anonymous"></script> 
+           crossOrigin="anonymous"></script>
+      <meta name="google-adsense-account" content="ca-pub-4158779929727637"></meta>      
       <meta name="description" content={description}/>
       {
         languages.map((item) => {
