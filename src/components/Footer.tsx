@@ -17,6 +17,11 @@ const navigation = {
   legal: [
     {name: 'Privacy Policy', href: '/privacy-policy'},
     {name: 'Terms & Conditions', href: '/terms-of-service'},
+  ],
+  friends:[
+    {name: 'Hotel Corporate Codes', href: 'https://corporate-codes.online/'},
+    {name: 'PC Bottleneck Calculator', href: 'https://bottleneck-calculators.online/'},
+    {name: 'TikTok Money Calculator', href: 'https://tiktok-money-calculator.online/'}
   ]
 }
 
@@ -56,7 +61,18 @@ export default function Footer({
               <div className="mt-10 md:mt-0">
                 <div className="text-sm font-semibold leading-6 text-white">Friends</div>
                 <ul role="list" className="mt-6 space-y-4">
-                        
+                {navigation.friends.map((item) => {
+                      return (
+                        <li key={item.name}>
+                          <Link href={`${item.href}`}
+                                target={"_blank"}
+                                className="text-sm leading-6 text-white ">
+                            {item.name}
+                          </Link>
+                        </li>
+                      )
+                    }
+                  )} 
                 </ul>
               </div>
             </div>
