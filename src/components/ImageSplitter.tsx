@@ -1,5 +1,5 @@
 // components/ImageSplitter.js
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import JSZip from 'jszip';
 import { saveAs } from 'file-saver';
 
@@ -9,7 +9,8 @@ const ImageSplitter = ({
   }) => {
   const [image, setImage] = useState(null);
   const [rows, setRows] = useState(3);
-  const [cols, setCols] = useState(3);
+  const [actualCols, setActualCols] = useState(3);
+  const [tempCols, setCols] = useState(3);
   const [chunks, setChunks] = useState([]);
 
   const handleImageUpload = (event) => {
@@ -21,43 +22,49 @@ const ImageSplitter = ({
     reader.readAsDataURL(file);
   };
 
+  // 使用 useEffect 监听 actualCols 的变化
+  useEffect(() => {
+    // 当 actualCols 更新时，进行图片切割
+    if (image && actualCols !== undefined) {
+      const img = new Image();
+      img.src = image;
+      img.onload = () => {
+        const { width, height } = img;
+        const chunkWidth = Math.floor(width / actualCols);
+        const chunkHeight = Math.floor(height / rows);
+
+        const newChunks = [];
+        for (let row = 0; row < rows; row++) {
+          for (let col = 0; col < actualCols; col++) {
+            const canvas = document.createElement('canvas');
+            const ctx = canvas.getContext('2d');
+            canvas.width = chunkWidth;
+            canvas.height = chunkHeight;
+
+            ctx.drawImage(
+              img,
+              col * chunkWidth,
+              row * chunkHeight,
+              chunkWidth,
+              chunkHeight,
+              0,
+              0,
+              chunkWidth,
+              chunkHeight
+            );
+
+            newChunks.push(canvas.toDataURL('image/png'));
+          }
+        }
+        setChunks(newChunks); // 更新分割后的图片
+      };
+    }
+  }, [actualCols, image, rows]); // 监听 actualCols 和 image 的变化
+
+
   const handleSplitAndDisplay = () => {
     if (!image) return;
-
-    const img = new Image();
-    img.src = image;
-    img.onload = () => {
-      const { width, height } = img;
-      const chunkWidth = Math.floor(width / cols);
-      const chunkHeight = Math.floor(height / rows);
-
-      const newChunks = [];
-
-      for (let row = 0; row < rows; row++) {
-        for (let col = 0; col < cols; col++) {
-          const canvas = document.createElement('canvas');
-          const ctx = canvas.getContext('2d');
-          canvas.width = chunkWidth;
-          canvas.height = chunkHeight;
-
-          ctx.drawImage(
-            img,
-            col * chunkWidth,
-            row * chunkHeight,
-            chunkWidth,
-            chunkHeight,
-            0,
-            0,
-            chunkWidth,
-            chunkHeight
-          );
-
-          newChunks.push(canvas.toDataURL('image/png'));
-        }
-      }
-
-      setChunks(newChunks);
-    };
+    setActualCols(tempCols); 
   };
 
   const handleDownload = () => {
@@ -97,7 +104,7 @@ const ImageSplitter = ({
             <span className="text-gray-700">{indexLanguageText.ColText}</span>
             <input
               type="number"
-              value={cols}
+              value={tempCols}
               onChange={(e) => setCols(Number(e.target.value))}
               min="1"
               className="mt-1 p-2 border border-gray-300 rounded-lg w-full sm:w-auto"
@@ -119,12 +126,16 @@ const ImageSplitter = ({
             {indexLanguageText.btn2}
           </button>
         </div>
-        <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 w-full sm:w-auto">
+        <div
+          className="grid gap-4"
+          style={{
+            gridTemplateColumns: `repeat(${actualCols}, minmax(0, 1fr))`
+          }}
+        >
           {chunks.map((chunk, index) => (
             <img key={index} src={chunk} alt={`Chunk ${index}`} className="border border-gray-300 rounded-lg" />
           ))}
         </div>
-        {image && <img src={image} alt="Uploaded" className="hidden" />}
       </div>
     </div>
 
