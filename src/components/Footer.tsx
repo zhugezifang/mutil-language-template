@@ -19,8 +19,6 @@ const navigation = {
     {name: 'Terms & Conditions', href: '/terms-of-service'},
   ],
   friends:[
-    {name: 'Hotel Corporate Codes', href: 'https://corporate-codes.online/'},
-    {name: 'PC Bottleneck Calculator', href: 'https://bottleneck-calculators.online/'},
     {name: 'TikTok Money Calculator', href: 'https://tiktok-money-calculator.online/'}
   ]
 }
